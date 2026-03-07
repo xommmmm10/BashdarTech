@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Social Media</title>
+<title>My Social Links</title>
+
 <style>
+
+/* Background image */
 body{
-font-family: Arial;
-text-align:center;
-background:#f0f0f0;
+margin:0;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:url("https://pin.it/7x48NBWv9") no-repeat center center/cover;
 }
-a{
+
+/* Glass container */
+.container{
+backdrop-filter: blur(10px);
+background: rgba(255,255,255,0.1);
+border-radius:20px;
+padding:40px;
+text-align:center;
+box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Glass buttons */
+.btn{
 display:block;
 margin:15px;
-padding:12px;
-width:200px;
-margin-left:auto;
-margin-right:auto;
-background:black;
+padding:12px 30px;
 color:white;
 text-decoration:none;
-border-radius:10px;
+font-size:18px;
+border-radius:30px;
+background: rgba(255,255,255,0.2);
+backdrop-filter: blur(10px);
+border:1px solid rgba(255,255,255,0.3);
+transition:0.3s;
 }
+
+.btn:hover{
+background: rgba(255,255,255,0.4);
+}
+
+/* QR code bottom */
+.qr{
+position:fixed;
+bottom:20px;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1>Follow Me</h1>
+<div class="container">
 
-<a href="https://www.facebook.com/share/1AhnJAfgSr/">Facebook</a>
-<a href="https://www.tiktok.com/@.binar014?_r=1&_t=ZS-94VEMZTTLFA">TikTok</a>
-<a href="https://www.snapchat.com/add/binar_014?share_id=ggaMZBIuUWk&locale=en-US">Snapchat</a>
+<h1 style="color:white;">Follow Me</h1>
 
-<br>
+<a class="btn" href="https://www.facebook.com/share/17qimg5D19/">Facebook</a>
+<a class="btn" href="https://www.tiktok.com/@bashdartech?_r=1&_t=ZS-94VFXie35Dc">TikTok</a>
+<a class="btn" href="https://www.snapchat.com/add/bashdartech?share_id=kZewKzwsBf4&locale=en-US">Snapchat</a>
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourwebsite.com">
+</div>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yourusername.github.io" />
+</div>
 
 </body>
 </html>
