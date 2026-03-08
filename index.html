@@ -1,75 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Social Links</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-/* Background image */
-body{
-margin:0;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-font-family:Arial;
-background:url("https://i.ibb.co/3kQ8KkT/bashdar-technology.jpg") no-repeat center center/cover;
-}
-
-/* Glass container */
-.container{
-backdrop-filter: blur(10px);
-background: rgba(255,255,255,0.1);
-border-radius:20px;
-padding:40px;
-text-align:center;
-box-shadow:0 8px 32px rgba(0,0,0,0.3);
-}
-
-/* Glass buttons */
-.btn{
-display:block;
-margin:15px;
-padding:12px 30px;
-color:white;
-text-decoration:none;
-font-size:18px;
-border-radius:30px;
-background: rgba(255,255,255,0.2);
-backdrop-filter: blur(10px);
-border:1px solid rgba(255,255,255,0.3);
-transition:0.3s;
-}
-
-.btn:hover{
-background: rgba(255,255,255,0.4);
-}
-
-/* QR code bottom */
-.qr{
-position:fixed;
-bottom:20px;
-}
-
-</style>
 </head>
-
 <body>
 
-<div class="container">
+<div class="background"></div>
 
-<h1 style="color:white;">Follow Me</h1>
+<div class="card">
 
-<a class="btn" href="https://www.facebook.com/share/17qimg5D19/">Facebook</a>
-<a class="btn" href="https://www.tiktok.com/@bashdartech?_r=1&_t=ZS-94VFXie35Dc">TikTok</a>
-<a class="btn" href="https://www.snapchat.com/add/bashdartech?share_id=kZewKzwsBf4&locale=en-US">Snapchat</a>
+<h1>My Social Links</h1>
+
+<div class="buttons">
+
+<a href="https://www.facebook.com/share/177UJnftLr/" class="btn fb">Facebook</a>
+<a href="https://www.tiktok.com/@bashdartech?_r=1&_t=ZS-94VG9od7v86" class="btn tt">TikTok</a>
+<a href="https://www.snapchat.com/add/bashdartech?share_id=a9RMZ918XPQ&locale=en-US" class="btn sc">Snapchat</a>
 
 </div>
 
 <div class="qr">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yourusername.github.io" />
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yourwebsite.com">
+<p>Scan QR Code</p>
 </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
