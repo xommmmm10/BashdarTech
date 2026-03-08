@@ -1,0 +1,88 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:black;
+overflow:hidden;
+}
+
+/* Animated Background */
+
+.background{
+position:fixed;
+width:100%;
+height:100%;
+background:url("background.jpg") center/cover no-repeat;
+filter:blur(5px);
+animation:zoom 20s infinite alternate;
+}
+
+@keyframes zoom{
+0%{transform:scale(1);}
+100%{transform:scale(1.2);}
+}
+
+/* Glass Card */
+
+.card{
+position:relative;
+padding:40px;
+width:300px;
+text-align:center;
+border-radius:20px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+box-shadow:0 0 25px rgba(0,0,0,0.5);
+color:white;
+animation:fade 1.5s ease;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* Buttons */
+
+.buttons{
+margin-top:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.btn{
+text-decoration:none;
+padding:12px;
+border-radius:10px;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px white;
+}
+
+.fb{background:#1877f2;}
+.tt{background:#000;}
+.sc{background:#fffc00; color:black;}
+
+/* QR */
+
+.qr{
+margin-top:25px;
+}
+
+.qr img{
+border-radius:10px;
+}
